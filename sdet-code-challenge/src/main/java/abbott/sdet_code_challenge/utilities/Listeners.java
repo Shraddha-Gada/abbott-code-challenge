@@ -13,29 +13,45 @@ import com.aventstack.extentreports.Status;
 public class Listeners implements ITestListener {
 
 	private ExtentReports extent = ExtentReporter.getReport();
-	private ExtentTest test;
-	private ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
+	private ExtentTest test;	
 
 	@Override
 	public void onTestStart(ITestResult result) {
 		String testName = result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(Test.class).testName();
-		test = extent.createTest(testName);
-		extentTest.set(test);
+		test = extent.createTest(testName);		
 		System.out.println("Test case '" + testName + "' started");
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		String testName = result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(Test.class).testName();
-		extentTest.get().log(Status.PASS, "Test Passed");
+		test.log(Status.PASS, "Test Passed");
 		System.out.println("Test case '" + testName + "' passed");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		String testName = result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(Test.class).testName();
-		extentTest.get().log(Status.FAIL, "Test Failed");
+		test.log(Status.FAIL, "Test Failed");
 		System.out.println("Test case '" + testName + "' failed");
+	}
+
+	@Override
+	public void onTestSkipped(ITestResult result) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onStart(ITestContext context) {
+		// TODO Auto-generated method stub
+
 	}
 
 	@Override
