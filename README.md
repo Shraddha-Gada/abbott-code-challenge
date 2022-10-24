@@ -8,13 +8,13 @@ Here is an SRS (System Requirement Specification) for the Header of LibreView Su
 website https://pat.libreview.io/.
 
 • The header displays the following links:
-o Patients (hidden for France)
-o Professionals (hidden for France)
+	- Patients (hidden for France)
+	- Professionals (hidden for France)
 
 Test Case Requirements
 • Only need to cover below country + language combinations
-o United States + English
-o France + French
+	- United States + English
+	- France + French
 
 ## Solution:
 Selecting the Option-2, ie:
@@ -23,9 +23,9 @@ Web Automation + Python:
 1) Successfully complete UI automation with any test framework or programing language.
 
 2) Write a small Python script to fetch data from API and output the data
-a) Get data from URL:
+	- Get data from URL:
 https://datausa.io/api/data?drilldowns=Nation&measures=Population
-b) Process response and output in below format:
+	- Process response and output in below format:
 According to _____, in _ years from 20__ to 20__, peak population growth was __% in
 20__ and lowest population increase was __% in 20__.
 
@@ -73,13 +73,13 @@ Implement TestNG Listeners and integrate ExtentReports for logging and customizi
 - [ExtentReporter.java](https://github.com/Shraddha-Gada/abbott-code-challenge/blob/main/sdet-code-challenge/src/main/java/abbott/sdet_code_challenge/utilities/ExtentReporter.java) is the class where Extent Report wrapper is implemented
 
 
-# Misc
-Additionally, with more time, I would have implemented code for capturing screenshots on test failures and a logging framework.
+##### Future Improvements
+- Additionally, with more time, I would have implemented code for capturing screenshots on test failures and a logging framework. 
 
 # Part-2:
 Script to fetch data from API and output the data
 As confirmed with Arpan in my last conversation, language was not a constraint, thus I have coded this in Java.
-I could have coded in python as well, just it would have take a bit more time
+I could have coded in python as well, just it would have taken a bit more time
 
 ### Pseudo Code:
 
@@ -137,5 +137,28 @@ Create final string using variables:
 - `low_growth_year`
 
 ##### Final code:
+This code will help us to fetch data from API and output the data
 [FetchDataFromAPI.java](https://github.com/Shraddha-Gada/abbott-code-challenge/blob/main/sdet-code-challenge/src/test/java/abbott/sdet_code_challenge/tests/FetchDataFromAPI.java)
+
+# How to run
+
+#### Pre-requisites:
+- JDK 1.8
+- Maven
+- M2Eclipse plugin in eclipse
+- TestNG plugin in eclipse
+
+#### Steps to run the project:
+
+1. Clone the below repo on your local machine using the below command:
+    ```git clone https://github.com/Shraddha-Gada/abbott-code-challenge.git```
+2. Code should get downloaded once the clone command is executed successfully.
+3. In Eclipse IDE, import as existing Maven project.
+4. Right click on testng.xml file and run the test cases.
+	This will execute all three cases:
+		- Case-1: Verify landing page for country 'United States'
+		- Case-2: Verify landing page for country 'France'
+5. Right click on FetchDataFromAPI.java and run as Java application	
+		- Case-3: Fetch the data from API and display the required output.
+6. You can find the test reports here: ```\sdet-code-challenge\reports\index.html```	
 
