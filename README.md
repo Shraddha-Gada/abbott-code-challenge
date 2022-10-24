@@ -39,20 +39,21 @@ Create a Maven Structured framework.
 ##### Step-2:
 Configure the following dependencies using pom.xml(Maven):
 
-*Selenium-Java*
-*TestNG*
-*WebDriverManager*
-*ExtentReports*
-*JSON-simple*
+- *Selenium-Java*
+- *TestNG*
+- *WebDriverManager*
+- *ExtentReports*
+- *JSON-simple*
 
 Maven automatically downloads the necessary files from the repository while building the project.
 
 ##### Step-3:
-Create a *globalVar.properties* file for storing browser config details and other properties which can be used for keyword-driven testing.
+Create a [globalVar.properties](https://github.com/Shraddha-Gada/abbott-code-challenge/blob/main/sdet-code-challenge/src/main/java/abbott/sdet_code_challenge/resources/globalVar.properties) file for storing browser config details and other properties which can be used for keyword-driven testing.
 
 ##### Step-4:
 
-Create a utility class *DriverInitializer.java* where driver is initialized and the browser is launched.
+Create a utility class [DriverInitializer.java](https://github.com/Shraddha-Gada/abbott-code-challenge/blob/main/sdet-code-challenge/src/main/java/abbott/sdet_code_challenge/utilities/DriverInitializer.java) where driver is initialized and the browser is launched.
+
 
 ##### Step-5:
 
@@ -60,16 +61,17 @@ Create an Object Repository for web UI element by implementing Page Object Model
 
 Under this model, for each web page in the application, there should be a corresponding Page Class. This Page class will identify the WebElements of that web page and also contains Page methods which perform operations on those WebElements. 
 
-*LandingPage.java* is the page class where webelements are created
-*LandingPageTest.java* is correspoding test class where actual test cases are written
+- [LandingPage.java](https://github.com/Shraddha-Gada/abbott-code-challenge/blob/main/sdet-code-challenge/src/main/java/abbott/sdet_code_challenge/pages/LandingPage.java) is the page class where webelements are created
+- [LandingPageTest.java](https://github.com/Shraddha-Gada/abbott-code-challenge/blob/main/sdet-code-challenge/src/test/java/abbott/sdet_code_challenge/tests/LandingPageTest.java) is correspoding test class where actual test cases are written
 
 ##### Step-6:
-Create a *testng.xml* runner file to trigger the tests with single point of execution control.
+Create a [testng.xml](https://github.com/Shraddha-Gada/abbott-code-challenge/blob/main/sdet-code-challenge/testng.xml) runner file to trigger the tests with single point of execution control.
 
 ##### Step-7:
 Implement TestNG Listeners and integrate ExtentReports for logging and customizing report.
-*Listeners.java* is the class where TestNG listeners have been implemented
-*ExtentReporter.java* is the class where Extent Report wrapper is implemented
+- [Listeners.java](https://github.com/Shraddha-Gada/abbott-code-challenge/blob/main/sdet-code-challenge/src/main/java/abbott/sdet_code_challenge/utilities/Listeners.java) is the class where TestNG listeners have been implemented
+- [ExtentReporter.java](https://github.com/Shraddha-Gada/abbott-code-challenge/blob/main/sdet-code-challenge/src/main/java/abbott/sdet_code_challenge/utilities/ExtentReporter.java) is the class where Extent Report wrapper is implemented
+
 
 # Misc
 Additionally, with more time, I would have implemented code for capturing screenshots on test failures and a logging framework.
