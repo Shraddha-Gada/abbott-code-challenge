@@ -9,7 +9,7 @@
       <class name="abbott.sdet_code_challenge.tests.LandingPageTest">
         <methods>
           <include name="initialize"/>
-          <include name="testLandingPageUS"/>
+          <include name="testLandingPageFrance"/>
           <include name="shutdownDriver"/>
         </methods>
       </class> <!-- abbott.sdet_code_challenge.tests.LandingPageTest -->

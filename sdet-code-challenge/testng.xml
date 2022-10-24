@@ -8,5 +8,5 @@
       <classes>
       <class name="abbott.sdet_code_challenge.tests.LandingPageTest"/>
     </classes>
-  </test> <!-- Test -->
+  </test><!-- Test -->
 </suite> <!-- Suite -->

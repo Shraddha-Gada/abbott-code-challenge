@@ -7,8 +7,11 @@ import java.io.InputStreamReader;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.testng.annotations.Test;
+
 import java.io.BufferedReader;
 
+@Test(testName="TC.3 Fetch data from API endpoint and display output")
 public class FetchDataFromAPI {
 
 	private final static String USER_AGENT = "Mozilla/5.0";

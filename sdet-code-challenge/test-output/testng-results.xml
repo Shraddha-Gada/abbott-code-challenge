@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-24T14:17:42 IST" name="Suite" finished-at="2022-10-24T14:18:17 IST" duration-ms="35077">
+  <suite started-at="2022-10-24T18:13:59 IST" name="Suite" finished-at="2022-10-24T18:14:34 IST" duration-ms="34535">
     <groups>
     </groups>
-    <test started-at="2022-10-24T14:17:42 IST" name="LandingPage" finished-at="2022-10-24T14:18:17 IST" duration-ms="35077">
+    <test started-at="2022-10-24T18:13:59 IST" name="LandingPage" finished-at="2022-10-24T18:14:34 IST" duration-ms="34535">
       <class name="abbott.sdet_code_challenge.tests.LandingPageTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:abbott.sdet_code_challenge.tests.LandingPageTest@68702e03]" started-at="2022-10-24T14:17:42 IST" name="initialize" finished-at="2022-10-24T14:17:48 IST" duration-ms="6746" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:abbott.sdet_code_challenge.tests.LandingPageTest@7164ca4c]" started-at="2022-10-24T18:13:59 IST" name="initialize" finished-at="2022-10-24T18:14:05 IST" duration-ms="5865" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testLandingPageFrance()[pri:0, instance:abbott.sdet_code_challenge.tests.LandingPageTest@68702e03]" started-at="2022-10-24T14:17:48 IST" name="testLandingPageFrance" finished-at="2022-10-24T14:18:10 IST" duration-ms="21259" status="PASS">
+        <test-method signature="testLandingPageFrance()[pri:0, instance:abbott.sdet_code_challenge.tests.LandingPageTest@7164ca4c]" started-at="2022-10-24T18:14:05 IST" name="testLandingPageFrance" finished-at="2022-10-24T18:14:27 IST" duration-ms="21822" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLandingPageFrance -->
-        <test-method is-config="true" signature="shutdownDriver()[pri:0, instance:abbott.sdet_code_challenge.tests.LandingPageTest@68702e03]" started-at="2022-10-24T14:18:10 IST" name="shutdownDriver" finished-at="2022-10-24T14:18:10 IST" duration-ms="190" status="PASS">
+        <test-method is-config="true" signature="shutdownDriver()[pri:0, instance:abbott.sdet_code_challenge.tests.LandingPageTest@7164ca4c]" started-at="2022-10-24T18:14:27 IST" name="shutdownDriver" finished-at="2022-10-24T18:14:27 IST" duration-ms="247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutdownDriver -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:abbott.sdet_code_challenge.tests.LandingPageTest@68702e03]" started-at="2022-10-24T14:18:10 IST" name="initialize" finished-at="2022-10-24T14:18:15 IST" duration-ms="5524" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:abbott.sdet_code_challenge.tests.LandingPageTest@7164ca4c]" started-at="2022-10-24T18:14:27 IST" name="initialize" finished-at="2022-10-24T18:14:32 IST" duration-ms="4858" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testLandingPageUS()[pri:0, instance:abbott.sdet_code_challenge.tests.LandingPageTest@68702e03]" started-at="2022-10-24T14:18:15 IST" name="testLandingPageUS" finished-at="2022-10-24T14:18:17 IST" duration-ms="1155" status="PASS">
+        <test-method signature="testLandingPageUS()[pri:0, instance:abbott.sdet_code_challenge.tests.LandingPageTest@7164ca4c]" started-at="2022-10-24T18:14:32 IST" name="testLandingPageUS" finished-at="2022-10-24T18:14:34 IST" duration-ms="1506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLandingPageUS -->
-        <test-method is-config="true" signature="shutdownDriver()[pri:0, instance:abbott.sdet_code_challenge.tests.LandingPageTest@68702e03]" started-at="2022-10-24T14:18:17 IST" name="shutdownDriver" finished-at="2022-10-24T14:18:17 IST" duration-ms="179" status="PASS">
+        <test-method is-config="true" signature="shutdownDriver()[pri:0, instance:abbott.sdet_code_challenge.tests.LandingPageTest@7164ca4c]" started-at="2022-10-24T18:14:34 IST" name="shutdownDriver" finished-at="2022-10-24T18:14:34 IST" duration-ms="200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutdownDriver -->
